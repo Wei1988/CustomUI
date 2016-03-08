@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		684624351C8E2BF20035F0A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684624341C8E2BF20035F0A7 /* main.m */; };
 		684624381C8E2BF20035F0A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684624371C8E2BF20035F0A7 /* AppDelegate.m */; };
-		6846243B1C8E2BF20035F0A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6846243A1C8E2BF20035F0A7 /* ViewController.m */; };
-		6846243E1C8E2BF20035F0A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6846243C1C8E2BF20035F0A7 /* Main.storyboard */; };
 		684624401C8E2BF20035F0A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6846243F1C8E2BF20035F0A7 /* Assets.xcassets */; };
 		684624431C8E2BF20035F0A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684624411C8E2BF20035F0A7 /* LaunchScreen.storyboard */; };
 		6846244E1C8E2BF20035F0A7 /* CustomUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6846244D1C8E2BF20035F0A7 /* CustomUITests.m */; };
 		684624591C8E2BF20035F0A7 /* CustomUIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 684624581C8E2BF20035F0A7 /* CustomUIUITests.m */; };
+		684624681C8E2CC00035F0A7 /* CustomUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684624671C8E2CC00035F0A7 /* CustomUIViewController.m */; };
+		6846246C1C8E2D460035F0A7 /* NSLayoutConstraint+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 6846246B1C8E2D460035F0A7 /* NSLayoutConstraint+convenience.m */; };
+		684624721C8E30EA0035F0A7 /* CommonViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 684624711C8E30EA0035F0A7 /* CommonViews.m */; };
+		684624781C8F35AB0035F0A7 /* LabelWithCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 684624771C8F35AB0035F0A7 /* LabelWithCircle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +41,6 @@
 		684624341C8E2BF20035F0A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		684624361C8E2BF20035F0A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		684624371C8E2BF20035F0A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		684624391C8E2BF20035F0A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6846243A1C8E2BF20035F0A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6846243D1C8E2BF20035F0A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6846243F1C8E2BF20035F0A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		684624421C8E2BF20035F0A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		684624441C8E2BF20035F0A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,14 @@
 		684624541C8E2BF20035F0A7 /* CustomUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		684624581C8E2BF20035F0A7 /* CustomUIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomUIUITests.m; sourceTree = "<group>"; };
 		6846245A1C8E2BF20035F0A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		684624661C8E2CC00035F0A7 /* CustomUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIViewController.h; sourceTree = "<group>"; };
+		684624671C8E2CC00035F0A7 /* CustomUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIViewController.m; sourceTree = "<group>"; };
+		6846246A1C8E2D460035F0A7 /* NSLayoutConstraint+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+convenience.h"; sourceTree = "<group>"; };
+		6846246B1C8E2D460035F0A7 /* NSLayoutConstraint+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+convenience.m"; sourceTree = "<group>"; };
+		684624701C8E30EA0035F0A7 /* CommonViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonViews.h; sourceTree = "<group>"; };
+		684624711C8E30EA0035F0A7 /* CommonViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonViews.m; sourceTree = "<group>"; };
+		684624761C8F35AB0035F0A7 /* LabelWithCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelWithCircle.h; sourceTree = "<group>"; };
+		684624771C8F35AB0035F0A7 /* LabelWithCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelWithCircle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +108,13 @@
 		684624321C8E2BF20035F0A7 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				684624691C8E2D2F0035F0A7 /* Utility */,
 				684624361C8E2BF20035F0A7 /* AppDelegate.h */,
 				684624371C8E2BF20035F0A7 /* AppDelegate.m */,
-				684624391C8E2BF20035F0A7 /* ViewController.h */,
-				6846243A1C8E2BF20035F0A7 /* ViewController.m */,
-				6846243C1C8E2BF20035F0A7 /* Main.storyboard */,
+				684624761C8F35AB0035F0A7 /* LabelWithCircle.h */,
+				684624771C8F35AB0035F0A7 /* LabelWithCircle.m */,
+				684624661C8E2CC00035F0A7 /* CustomUIViewController.h */,
+				684624671C8E2CC00035F0A7 /* CustomUIViewController.m */,
 				6846243F1C8E2BF20035F0A7 /* Assets.xcassets */,
 				684624411C8E2BF20035F0A7 /* LaunchScreen.storyboard */,
 				684624441C8E2BF20035F0A7 /* Info.plist */,
@@ -138,6 +147,17 @@
 				6846245A1C8E2BF20035F0A7 /* Info.plist */,
 			);
 			path = CustomUIUITests;
+			sourceTree = "<group>";
+		};
+		684624691C8E2D2F0035F0A7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6846246A1C8E2D460035F0A7 /* NSLayoutConstraint+convenience.h */,
+				6846246B1C8E2D460035F0A7 /* NSLayoutConstraint+convenience.m */,
+				684624701C8E30EA0035F0A7 /* CommonViews.h */,
+				684624711C8E30EA0035F0A7 /* CommonViews.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +268,6 @@
 			files = (
 				684624431C8E2BF20035F0A7 /* LaunchScreen.storyboard in Resources */,
 				684624401C8E2BF20035F0A7 /* Assets.xcassets in Resources */,
-				6846243E1C8E2BF20035F0A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6846243B1C8E2BF20035F0A7 /* ViewController.m in Sources */,
 				684624381C8E2BF20035F0A7 /* AppDelegate.m in Sources */,
+				684624721C8E30EA0035F0A7 /* CommonViews.m in Sources */,
+				684624681C8E2CC00035F0A7 /* CustomUIViewController.m in Sources */,
+				6846246C1C8E2D460035F0A7 /* NSLayoutConstraint+convenience.m in Sources */,
+				684624781C8F35AB0035F0A7 /* LabelWithCircle.m in Sources */,
 				684624351C8E2BF20035F0A7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6846243C1C8E2BF20035F0A7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6846243D1C8E2BF20035F0A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		684624411C8E2BF20035F0A7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -501,6 +515,7 @@
 				6846245F1C8E2BF20035F0A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		684624601C8E2BF20035F0A7 /* Build configuration list for PBXNativeTarget "CustomUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +524,7 @@
 				684624621C8E2BF20035F0A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		684624631C8E2BF20035F0A7 /* Build configuration list for PBXNativeTarget "CustomUIUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +533,7 @@
 				684624651C8E2BF20035F0A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

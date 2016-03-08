@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CommonViews.h
 //  CustomUI
 //
 //  Created by victor zhang on 3/7/16.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CommonViews : UIView
 
++ (UIView *)commonView;
 
 @end
-
