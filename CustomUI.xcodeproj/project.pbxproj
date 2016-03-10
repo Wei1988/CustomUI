@@ -17,6 +17,17 @@
 		6846246C1C8E2D460035F0A7 /* NSLayoutConstraint+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 6846246B1C8E2D460035F0A7 /* NSLayoutConstraint+convenience.m */; };
 		684624721C8E30EA0035F0A7 /* CommonViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 684624711C8E30EA0035F0A7 /* CommonViews.m */; };
 		684624781C8F35AB0035F0A7 /* LabelWithCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 684624771C8F35AB0035F0A7 /* LabelWithCircle.m */; };
+		68DE34271C8F57B200FE68C2 /* WZCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DE34261C8F57B200FE68C2 /* WZCheckBox.m */; };
+		68DE342F1C8F588700FE68C2 /* CheckBox-unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DE34291C8F588700FE68C2 /* CheckBox-unselected.png */; };
+		68DE34301C8F588700FE68C2 /* CheckBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DE342A1C8F588700FE68C2 /* CheckBox.png */; };
+		68DE34311C8F588700FE68C2 /* Close-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DE342B1C8F588700FE68C2 /* Close-small.png */; };
+		68DE34321C8F588700FE68C2 /* Close.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DE342C1C8F588700FE68C2 /* Close.png */; };
+		68DE34331C8F588700FE68C2 /* Star-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DE342D1C8F588700FE68C2 /* Star-grey.png */; };
+		68DE34341C8F588700FE68C2 /* Star-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DE342E1C8F588700FE68C2 /* Star-red.png */; };
+		68DE34371C8F58C500FE68C2 /* ListView-unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DE34351C8F58C500FE68C2 /* ListView-unselected.png */; };
+		68DE34381C8F58C500FE68C2 /* ListView.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DE34361C8F58C500FE68C2 /* ListView.png */; };
+		68DE343B1C8F58D500FE68C2 /* Add.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DE34391C8F58D500FE68C2 /* Add.png */; };
+		68DE343C1C8F58D500FE68C2 /* Minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DE343A1C8F58D500FE68C2 /* Minus.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +69,18 @@
 		684624711C8E30EA0035F0A7 /* CommonViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonViews.m; sourceTree = "<group>"; };
 		684624761C8F35AB0035F0A7 /* LabelWithCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelWithCircle.h; sourceTree = "<group>"; };
 		684624771C8F35AB0035F0A7 /* LabelWithCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelWithCircle.m; sourceTree = "<group>"; };
+		68DE34251C8F57B200FE68C2 /* WZCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZCheckBox.h; sourceTree = "<group>"; };
+		68DE34261C8F57B200FE68C2 /* WZCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZCheckBox.m; sourceTree = "<group>"; };
+		68DE34291C8F588700FE68C2 /* CheckBox-unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckBox-unselected.png"; sourceTree = "<group>"; };
+		68DE342A1C8F588700FE68C2 /* CheckBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBox.png; sourceTree = "<group>"; };
+		68DE342B1C8F588700FE68C2 /* Close-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Close-small.png"; sourceTree = "<group>"; };
+		68DE342C1C8F588700FE68C2 /* Close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close.png; sourceTree = "<group>"; };
+		68DE342D1C8F588700FE68C2 /* Star-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-grey.png"; sourceTree = "<group>"; };
+		68DE342E1C8F588700FE68C2 /* Star-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-red.png"; sourceTree = "<group>"; };
+		68DE34351C8F58C500FE68C2 /* ListView-unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListView-unselected.png"; sourceTree = "<group>"; };
+		68DE34361C8F58C500FE68C2 /* ListView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ListView.png; sourceTree = "<group>"; };
+		68DE34391C8F58D500FE68C2 /* Add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add.png; sourceTree = "<group>"; };
+		68DE343A1C8F58D500FE68C2 /* Minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Minus.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +136,8 @@
 				684624371C8E2BF20035F0A7 /* AppDelegate.m */,
 				684624761C8F35AB0035F0A7 /* LabelWithCircle.h */,
 				684624771C8F35AB0035F0A7 /* LabelWithCircle.m */,
+				68DE34251C8F57B200FE68C2 /* WZCheckBox.h */,
+				68DE34261C8F57B200FE68C2 /* WZCheckBox.m */,
 				684624661C8E2CC00035F0A7 /* CustomUIViewController.h */,
 				684624671C8E2CC00035F0A7 /* CustomUIViewController.m */,
 				6846243F1C8E2BF20035F0A7 /* Assets.xcassets */,
@@ -156,8 +181,26 @@
 				6846246B1C8E2D460035F0A7 /* NSLayoutConstraint+convenience.m */,
 				684624701C8E30EA0035F0A7 /* CommonViews.h */,
 				684624711C8E30EA0035F0A7 /* CommonViews.m */,
+				68DE34281C8F585300FE68C2 /* Images */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		68DE34281C8F585300FE68C2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				68DE34391C8F58D500FE68C2 /* Add.png */,
+				68DE343A1C8F58D500FE68C2 /* Minus.png */,
+				68DE34351C8F58C500FE68C2 /* ListView-unselected.png */,
+				68DE34361C8F58C500FE68C2 /* ListView.png */,
+				68DE34291C8F588700FE68C2 /* CheckBox-unselected.png */,
+				68DE342A1C8F588700FE68C2 /* CheckBox.png */,
+				68DE342B1C8F588700FE68C2 /* Close-small.png */,
+				68DE342C1C8F588700FE68C2 /* Close.png */,
+				68DE342D1C8F588700FE68C2 /* Star-grey.png */,
+				68DE342E1C8F588700FE68C2 /* Star-red.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +309,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DE343C1C8F58D500FE68C2 /* Minus.png in Resources */,
+				68DE34381C8F58C500FE68C2 /* ListView.png in Resources */,
 				684624431C8E2BF20035F0A7 /* LaunchScreen.storyboard in Resources */,
+				68DE34341C8F588700FE68C2 /* Star-red.png in Resources */,
+				68DE34311C8F588700FE68C2 /* Close-small.png in Resources */,
+				68DE342F1C8F588700FE68C2 /* CheckBox-unselected.png in Resources */,
+				68DE343B1C8F58D500FE68C2 /* Add.png in Resources */,
+				68DE34301C8F588700FE68C2 /* CheckBox.png in Resources */,
+				68DE34321C8F588700FE68C2 /* Close.png in Resources */,
+				68DE34371C8F58C500FE68C2 /* ListView-unselected.png in Resources */,
 				684624401C8E2BF20035F0A7 /* Assets.xcassets in Resources */,
+				68DE34331C8F588700FE68C2 /* Star-grey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +348,7 @@
 				684624381C8E2BF20035F0A7 /* AppDelegate.m in Sources */,
 				684624721C8E30EA0035F0A7 /* CommonViews.m in Sources */,
 				684624681C8E2CC00035F0A7 /* CustomUIViewController.m in Sources */,
+				68DE34271C8F57B200FE68C2 /* WZCheckBox.m in Sources */,
 				6846246C1C8E2D460035F0A7 /* NSLayoutConstraint+convenience.m in Sources */,
 				684624781C8F35AB0035F0A7 /* LabelWithCircle.m in Sources */,
 				684624351C8E2BF20035F0A7 /* main.m in Sources */,

@@ -9,6 +9,7 @@
 #import "CustomUIViewController.h"
 #import "NSLayoutConstraint+convenience.h"
 #import "LabelWithCircle.h"
+#import "WZCheckBox.h"
 
 @interface CustomUIViewController ()
 
@@ -33,12 +34,19 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.title = @"test custom UI";
     
+    //1. add label with background circle
     LabelWithCircle *labelCircle = [[LabelWithCircle alloc] init];
     labelCircle.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:labelCircle];
     [NSLayoutConstraint pinLeftWithConstant:10 forSubView:labelCircle inSuperView:self.view];
     [NSLayoutConstraint pinTopWithConstant:10 forSubView:labelCircle inSuperView:self.view];
     
+    //2. add check box
+    WZCheckBox *checkboxView = [[WZCheckBox alloc] init];
+    checkboxView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:checkboxView];
+    [NSLayoutConstraint pinLeftOfView:checkboxView withConstant:50 ToRightOfView:labelCircle];
+    [NSLayoutConstraint pinTopWithConstant:20 forSubView:checkboxView inSuperView:self.view];
     
 }
 
