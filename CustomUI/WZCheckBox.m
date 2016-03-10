@@ -9,10 +9,11 @@
 #import "WZCheckBox.h"
 #import "NSLayoutConstraint+convenience.h"
 
-static NSString *const uncheckedImageName = @"CheckBox-unselected.png";
-static NSString *const checkedImageName = @"CheckBox.png";
-static CGFloat const checkBoxImageWidth = 25.f;
-static CGFloat const checkBoxImageHeight = 25.f;
+static NSString *const UncheckedImageName = @"CheckBox-unselected.png";
+static NSString *const CheckedImageName = @"CheckBox.png";
+static CGFloat const CheckBoxImageWidth = 25.f;
+static CGFloat const CheckBoxImageHeight = 25.f;
+static CGFloat const FaultTolerance = 20.f;
 
 @interface WZCheckBox ()
 
@@ -54,7 +55,7 @@ static CGFloat const checkBoxImageHeight = 25.f;
     [self setState:self.isChecked];
     [self addSubview:checkBoxImageView];
     self.checkBoxImageView = checkBoxImageView;
-    [NSLayoutConstraint pinWidh:YES Constant:checkBoxImageWidth pinHeight:YES Constant:checkBoxImageHeight forView:self.checkBoxImageView];
+    [NSLayoutConstraint pinWidh:YES Constant:CheckBoxImageWidth pinHeight:YES Constant:CheckBoxImageHeight forView:self.checkBoxImageView];
     [NSLayoutConstraint pinSubview:self.checkBoxImageView inSuperView:self pinLeft:YES leftConstraint:0 pinRight:NO rightConstraint:0 pinTop:YES topConstraint:0 pinBottom:YES bottomConstraint:0];
     
     //2. checkbox instruction text
@@ -66,16 +67,53 @@ static CGFloat const checkBoxImageHeight = 25.f;
     [NSLayoutConstraint pinRightWithConstant:0 forSubView:self.instructionLabel inSuperView:self];
     [NSLayoutConstraint pinCenterYofView:self.instructionLabel inSuperView:self];
     [NSLayoutConstraint pinLeftOfView:self.instructionLabel withConstant:10.f ToRightOfView:self.checkBoxImageView];
+    
+//    //3. tap gesture -- or use uitouch to handle
+//    UITapGestureRecognizer *tapGesteure = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+//    [self addGestureRecognizer:tapGesteure];
+}
+
+- (instancetype)checkBoxWithText:(NSString *)introductionText {
+    WZCheckBox *checkbox = [[WZCheckBox alloc] init];
+    checkbox.instructionLabel.text = introductionText;
+    return checkbox;
 }
 
 - (void)setState:(BOOL)isChecked {
     if (isChecked) {
-        self.checkBoxImageView.image = [UIImage imageNamed:checkedImageName];
+        self.checkBoxImageView.image = [UIImage imageNamed:CheckedImageName];
     } else {
-        self.checkBoxImageView.image = [UIImage imageNamed:uncheckedImageName];
+        self.checkBoxImageView.image = [UIImage imageNamed:UncheckedImageName];
     }
 }
 
+//#pragma mark - handle tap gesture
+//- (void)handleTapGesture:(UITapGestureRecognizer *)recongizer {
+//    self.isChecked = !self.isChecked;
+//    [self setState:self.isChecked];
+//}
 
+#pragma mark - handle touches
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *endToudh = [touches anyObject];
+    if ([self touchIsOutside:endToudh]) {
+        [self sendActionsForControlEvents:UIControlEventTouchUpOutside];
+    } else {
+        self.isChecked = !self.isChecked;
+        [self setState:self.isChecked];
+        [self sendActionsForControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    
+}
+
+- (BOOL)touchIsOutside:(UITouch *)touch {
+    CGPoint endPoint = [touch locationInView:self];
+    if (endPoint.x < -FaultTolerance || endPoint.y < -FaultTolerance || endPoint.x > self.frame.size.width + FaultTolerance || endPoint.y > self.frame.size.height + FaultTolerance) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
 
 @end
